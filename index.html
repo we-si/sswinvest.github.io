@@ -3,14 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SSW AS – App Development</title>
+    <title>AI Girl – Privacy Policy</title>
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
+        * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
             background-color: #0a0a0a;
@@ -19,32 +14,17 @@
             display: flex;
             flex-direction: column;
         }
-
         header {
             padding: 32px 48px;
             border-bottom: 1px solid #1e1e1e;
-        }
-
-        header h1 {
-            font-size: 20px;
-            font-weight: 600;
-            letter-spacing: 0.04em;
-            color: #ffffff;
-        }
-
-        main {
-            flex: 1;
             display: flex;
+            justify-content: space-between;
             align-items: center;
-            justify-content: center;
-            padding: 80px 24px;
         }
-
-        .hero {
-            max-width: 640px;
-            text-align: center;
-        }
-
+        header h1 { font-size: 20px; font-weight: 600; color: #fff; }
+        header a { font-size: 14px; color: #666; text-decoration: none; }
+        header a:hover { color: #a78bfa; }
+        main { flex: 1; max-width: 720px; margin: 0 auto; padding: 64px 24px; width: 100%; }
         .badge {
             display: inline-block;
             background: #1a1a2e;
@@ -54,81 +34,19 @@
             padding: 6px 16px;
             border-radius: 100px;
             border: 1px solid #2d2d4e;
-            margin-bottom: 32px;
-            letter-spacing: 0.03em;
-        }
-
-        .hero h2 {
-            font-size: 48px;
-            font-weight: 700;
-            line-height: 1.15;
-            color: #ffffff;
             margin-bottom: 24px;
-            letter-spacing: -0.02em;
         }
-
-        .hero h2 span {
-            color: #a78bfa;
-        }
-
-        .hero p {
-            font-size: 18px;
-            line-height: 1.7;
-            color: #888;
-            margin-bottom: 48px;
-        }
-
-        .cards {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-bottom: 56px;
-        }
-
-        .card {
-            background: #111;
-            border: 1px solid #1e1e1e;
-            border-radius: 16px;
-            padding: 24px;
-            width: 180px;
-            text-align: center;
-        }
-
-        .card .icon {
-            font-size: 28px;
-            margin-bottom: 12px;
-        }
-
-        .card h3 {
-            font-size: 14px;
-            font-weight: 600;
-            color: #fff;
-            margin-bottom: 6px;
-        }
-
-        .card p {
-            font-size: 12px;
-            color: #555;
-            margin-bottom: 0;
-        }
-
-        .contact-btn {
-            display: inline-block;
-            background: #a78bfa;
-            color: #0a0a0a;
-            font-size: 15px;
-            font-weight: 600;
-            padding: 14px 32px;
-            border-radius: 100px;
-            text-decoration: none;
-            transition: opacity 0.2s;
-        }
-
-        .contact-btn:hover {
-            opacity: 0.85;
-        }
-
+        h2 { font-size: 36px; font-weight: 700; color: #fff; margin-bottom: 8px; letter-spacing: -0.02em; }
+        .updated { font-size: 13px; color: #555; margin-bottom: 48px; }
+        h3 { font-size: 17px; font-weight: 600; color: #fff; margin: 36px 0 12px; }
+        p { font-size: 15px; line-height: 1.8; color: #888; margin-bottom: 12px; }
+        ul { padding-left: 20px; margin-bottom: 12px; }
+        ul li { font-size: 15px; line-height: 1.8; color: #888; margin-bottom: 4px; }
+        table { width: 100%; border-collapse: collapse; margin: 16px 0; }
+        th { text-align: left; font-size: 13px; color: #555; padding: 8px 12px; border-bottom: 1px solid #1e1e1e; }
+        td { font-size: 14px; color: #888; padding: 10px 12px; border-bottom: 1px solid #141414; }
+        td a { color: #a78bfa; text-decoration: none; }
+        td a:hover { text-decoration: underline; }
         footer {
             padding: 32px 48px;
             border-top: 1px solid #1e1e1e;
@@ -138,72 +56,96 @@
             flex-wrap: wrap;
             gap: 12px;
         }
-
-        footer p {
-            font-size: 13px;
-            color: #444;
-        }
-
-        footer a {
-            color: #666;
-            text-decoration: none;
-            font-size: 13px;
-        }
-
-        footer a:hover {
-            color: #a78bfa;
-        }
-
+        footer p { font-size: 13px; color: #444; }
+        footer a { color: #666; text-decoration: none; font-size: 13px; }
+        footer a:hover { color: #a78bfa; }
         @media (max-width: 600px) {
             header { padding: 24px; }
-            .hero h2 { font-size: 32px; }
+            main { padding: 40px 20px; }
+            h2 { font-size: 28px; }
             footer { padding: 24px; flex-direction: column; align-items: flex-start; }
         }
     </style>
 </head>
 <body>
-
     <header>
         <h1>SSW AS</h1>
+        <a href="/">← Back</a>
     </header>
 
     <main>
-        <div class="hero">
-            <div class="badge">Technology &amp; App Development</div>
+        <div class="badge">AI Girl</div>
+        <h2>Privacy Policy</h2>
+        <p class="updated">Last updated: March 24, 2026</p>
 
-            <h2>Building <span>meaningful</span> mobile experiences</h2>
+        <h3>1. Introduction</h3>
+        <p>AI Girl ("we", "our", or "us") is operated by SSW AS, a Norwegian company. This Privacy Policy explains how we collect, use, and store information when you use our iOS application.</p>
 
-            <p>
-                SSW AS is a Norwegian company focused on developing and publishing
-                mobile applications. We build products that people use every day.
-            </p>
+        <h3>2. Age Requirement</h3>
+        <p>AI Girl is intended for users <strong style="color:#fff">18 years of age or older</strong>. By using this app, you confirm that you are at least 18 years old. We do not knowingly collect data from anyone under 18.</p>
 
-            <div class="cards">
-                <div class="card">
-                    <div class="icon">📱</div>
-                    <h3>Mobile Apps</h3>
-                    <p>iOS applications built for the App Store</p>
-                </div>
-                <div class="card">
-                    <div class="icon">🤖</div>
-                    <h3>AI-Powered</h3>
-                    <p>Products built with modern AI technology</p>
-                </div>
-                <div class="card">
-                    <div class="icon">🇳🇴</div>
-                    <h3>Norwegian</h3>
-                    <p>Registered company based in Norway</p>
-                </div>
-            </div>
+        <h3>3. Information We Collect</h3>
+        <p><strong style="color:#fff">Automatically collected:</strong></p>
+        <ul>
+            <li>A device identifier (Apple's Vendor ID) — used to link your characters and chat history to your device. This is never tied to your name or Apple ID.</li>
+            <li>Push notification token — only if you grant permission, used solely to send you app notifications.</li>
+        </ul>
+        <p><strong style="color:#fff">You provide:</strong></p>
+        <ul>
+            <li>Character preferences you set during onboarding (appearance, personality)</li>
+            <li>Messages you send in chat</li>
+        </ul>
 
-            <a href="mailto:post@sswinvest.no" class="contact-btn">Contact us</a>
-        </div>
+        <h3>4. How We Use Your Information</h3>
+        <ul>
+            <li>To generate and display your AI companion characters</li>
+            <li>To store and retrieve your chat history</li>
+            <li>To personalise AI responses based on things you share in chat</li>
+            <li>To send push notifications if you have granted permission</li>
+            <li>We do <strong style="color:#fff">not</strong> sell, rent, or share your data with third parties for marketing</li>
+        </ul>
+
+        <h3>4a. Data Sent to Third-Party AI Services</h3>
+        <p>To provide AI chat responses and generate images, the messages you send and your character preferences are transmitted to our third-party AI providers (Anthropic and Fal.ai). These providers process your data solely to generate responses and are bound by their own privacy policies listed below. We do not use this data for any other purpose.</p>
+
+        <h3>5. Third-Party Services</h3>
+        <p>We use the following third-party services to operate the app:</p>
+        <table>
+            <tr><th>Service</th><th>Purpose</th><th>Privacy Policy</th></tr>
+            <tr><td>Anthropic (Claude)</td><td>AI chat responses</td><td><a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a></td></tr>
+            <tr><td>Fal.ai</td><td>AI image generation</td><td><a href="https://fal.ai/privacy" target="_blank">fal.ai/privacy</a></td></tr>
+            <tr><td>Supabase</td><td>Cloud data storage</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
+            <tr><td>Apple StoreKit</td><td>Subscription payments</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></td></tr>
+        </table>
+
+        <h3>6. Data Storage</h3>
+        <p>Your data is stored securely on Supabase servers. Chat messages and character data are associated only with your anonymous device ID — not your name, email, or Apple ID.</p>
+
+        <h3>7. Data Retention & Deletion</h3>
+        <p>You may request deletion of all your data at any time by contacting us. We will delete all stored characters, messages, and associated data within 30 days of your request.</p>
+
+        <h3>8. In-App Purchases</h3>
+        <p>Subscription payments are processed entirely by Apple. We do not store or access your payment information.</p>
+
+        <h3>9. Your Rights (GDPR)</h3>
+        <p>As a Norwegian company subject to GDPR and the Norwegian Personal Data Act (personopplysningsloven), we respect your rights as a data subject:</p>
+        <ul>
+            <li>Right of access — you can request a copy of the data we hold about you</li>
+            <li>Right to rectification — you can request correction of inaccurate data</li>
+            <li>Right to erasure — you can request deletion of all your data</li>
+            <li>Right to data portability — you can request your data in a portable format</li>
+            <li>Right to object — you can object to processing of your data</li>
+            <li>Right to withdraw consent — at any time by deleting the app</li>
+        </ul>
+        <p>If you believe we have handled your data incorrectly, you have the right to lodge a complaint with Datatilsynet (the Norwegian Data Protection Authority) at <a href="https://www.datatilsynet.no" target="_blank" style="color:#a78bfa">datatilsynet.no</a>.</p>
+
+        <h3>10. Contact</h3>
+        <p>For privacy questions or data deletion requests, contact us at: <a href="mailto:post@sswinvest.no" style="color:#a78bfa">post@sswinvest.no</a></p>
     </main>
 
     <footer>
-        <p>© 2026 SSW AS · Org.nr. [FYLL INN ORG.NR]</p>
+        <p>© 2026 SSW AS</p>
         <a href="mailto:post@sswinvest.no">post@sswinvest.no</a>
     </footer>
-
 </body>
 </html>
