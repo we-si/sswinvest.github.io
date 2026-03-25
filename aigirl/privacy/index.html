@@ -1,70 +1,349 @@
-# Privacy Policy
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – AI Girl</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-**Last updated: March 25, 2026**
+    body {
+      font-family: -apple-system, "Söhne", ui-sans-serif, system-ui, sans-serif;
+      background: #faf9f7;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-## 1. Introduction
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5e2dc;
+      padding: 18px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-size: 15px; font-weight: 600; color: #1a1a1a; letter-spacing: -0.01em; }
+    .logo span { color: #d4763b; }
+    nav a {
+      font-size: 14px;
+      color: #666;
+      text-decoration: none;
+      margin-left: 24px;
+      transition: color 0.15s;
+    }
+    nav a:hover { color: #d4763b; }
+    nav a.active { color: #d4763b; font-weight: 500; }
 
-AI Girl ("we", "our", or "us") is committed to protecting your privacy. This Privacy Policy explains how we collect, use, and store information when you use our app.
+    main {
+      flex: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+      width: 100%;
+    }
 
-## 2. Age Requirement
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 600;
+      color: #d4763b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
 
-AI Girl is intended for users **18 years of age or older**. By using this app, you confirm that you are at least 18 years old. We do not knowingly collect data from anyone under 18.
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #1a1a1a;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
 
-## 3. Information We Collect
+    .meta {
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 56px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #e5e2dc;
+    }
 
-**Automatically collected:**
-- A device identifier (Apple's Vendor ID) — used to link your characters and chat history to your device. This is never tied to your name or Apple ID.
+    h2 {
+      font-size: 18px;
+      font-weight: 650;
+      color: #1a1a1a;
+      margin: 40px 0 12px;
+      letter-spacing: -0.01em;
+    }
 
-**You provide:**
-- Character preferences you set during onboarding (appearance, personality)
-- Messages you send in chat
-- Voice input when using the speech-to-text feature (audio is processed on-device and via Apple's Speech Recognition service; we do not store audio recordings)
+    p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 14px;
+    }
 
-## 4. How We Use Your Information
+    ul {
+      padding-left: 0;
+      margin-bottom: 14px;
+      list-style: none;
+    }
+    ul li {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #444;
+      padding-left: 20px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+    ul li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: #d4763b;
+    }
 
-- To generate and display your AI companion characters
-- To store and retrieve your chat history
-- To personalise AI responses based on things you share in chat
-- We do **not** sell, rent, or share your data with third parties for marketing
+    strong { color: #1a1a1a; font-weight: 600; }
 
-## 5. Third-Party Services
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 14px;
+      font-size: 14px;
+    }
+    thead th {
+      text-align: left;
+      font-weight: 600;
+      color: #1a1a1a;
+      font-size: 12px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding: 10px 14px;
+      background: #f3f1ed;
+      border-bottom: 1px solid #e5e2dc;
+    }
+    tbody td {
+      padding: 12px 14px;
+      color: #555;
+      border-bottom: 1px solid #eeebe6;
+      vertical-align: top;
+    }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:hover td { background: #f9f7f4; }
+    a { color: #d4763b; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-We use the following third-party services to operate the app:
+    .callout {
+      background: #fff8f4;
+      border: 1px solid #f0d5c4;
+      border-left: 4px solid #d4763b;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    .callout p { margin-bottom: 0; color: #5a3a28; font-size: 14px; }
 
-| Service | Purpose | Privacy Policy |
-|---------|---------|---------------|
-| Anthropic (Claude) | AI chat responses | https://www.anthropic.com/privacy |
-| Fal.ai | AI image generation | https://fal.ai/privacy |
-| Supabase | Cloud data storage | https://supabase.com/privacy |
-| Apple Speech Recognition | Voice-to-text transcription | https://www.apple.com/legal/privacy/ |
+    .divider { border: none; border-top: 1px solid #e5e2dc; margin: 48px 0 0; }
 
-Each service has its own privacy policy governing how they handle data.
+    footer {
+      background: #fff;
+      border-top: 1px solid #e5e2dc;
+      padding: 24px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    footer p { font-size: 13px; color: #999; }
+    footer a { font-size: 13px; color: #999; text-decoration: none; margin-left: 20px; }
+    footer a:hover { color: #d4763b; }
 
-## 6. Data Storage
+    @media (max-width: 640px) {
+      header { padding: 16px 20px; }
+      h1 { font-size: 28px; }
+      main { padding: 40px 20px 72px; }
+      footer { padding: 20px; flex-direction: column; align-items: flex-start; }
+      footer a { margin-left: 0; margin-top: 4px; }
+    }
+  </style>
+</head>
+<body>
 
-Your data is stored securely on Supabase servers. Chat messages and character data are associated only with your anonymous device ID — not your name, email, or Apple ID.
+  <header>
+    <div class="logo">SSW AS <span>· AI Girl</span></div>
+    <nav>
+      <a href="../privacy/" class="active">Privacy Policy</a>
+      <a href="../terms/">Terms of Use</a>
+    </nav>
+  </header>
 
-## 7. Data Retention & Deletion
+  <main>
+    <div class="eyebrow">Legal</div>
+    <h1>Privacy Policy</h1>
+    <p class="meta">Last updated: March 25, 2026 &nbsp;·&nbsp; Effective: March 25, 2026</p>
 
-You may request deletion of all your data at any time by contacting us. We will delete all stored characters, messages, and associated data within 30 days of your request.
+    <p>AI Girl is operated by <strong>SSW AS</strong>, a Norwegian company. This Privacy Policy explains what data we collect when you use our iOS application, how we use it, and your rights as a user. By using the app you agree to the practices described here.</p>
 
-## 8. In-App Purchases
+    <div class="callout">
+      <p><strong>Age requirement:</strong> AI Girl is strictly intended for users aged <strong>18 years or older</strong>. We do not knowingly collect data from anyone under 18. If we become aware that a user is under 18, we will delete their data immediately.</p>
+    </div>
 
-Subscription payments are processed entirely by Apple. We do not store or access your payment information.
+    <!-- 1 -->
+    <h2>1. Data Controller</h2>
+    <p>
+      <strong>SSW AS</strong><br>
+      Norway<br>
+      Email: <a href="mailto:post@sswinvest.no">post@sswinvest.no</a>
+    </p>
 
-## 9. Your Rights
+    <!-- 2 -->
+    <h2>2. Information We Collect</h2>
+    <p><strong>Automatically collected:</strong></p>
+    <ul>
+      <li>Device identifier (Apple Vendor ID / IDFV) — used solely to link your characters and chat history to your device. It is never tied to your name or Apple ID, and cannot be used to identify you across other apps.</li>
+      <li>Push notification token — only if you explicitly grant permission, used solely to send you in-app notifications from the app.</li>
+    </ul>
+    <p><strong>Information you provide:</strong></p>
+    <ul>
+      <li>Character preferences created during onboarding (name, age, appearance, personality traits, language preference)</li>
+      <li>Messages you send in chat</li>
+      <li>Voice input when using the speech-to-text feature — audio is processed on-device and via Apple's Speech Recognition service; we never store audio recordings</li>
+    </ul>
+    <p><strong>We do NOT collect:</strong></p>
+    <ul>
+      <li>Your name, email address, or Apple ID</li>
+      <li>Location data</li>
+      <li>Contacts or photos from your device library</li>
+      <li>Health or financial information</li>
+      <li>Data from other apps or websites</li>
+    </ul>
 
-You have the right to:
-- Access the data we hold about you
-- Request correction of inaccurate data
-- Request deletion of your data
-- Withdraw consent at any time by deleting the app
+    <!-- 3 -->
+    <h2>3. How We Use Your Information</h2>
+    <ul>
+      <li>To generate and display your AI companion characters</li>
+      <li>To store and retrieve your chat history</li>
+      <li>To personalise AI responses based on information you share in chat</li>
+      <li>To generate AI images based on character settings you chose</li>
+      <li>To send push notifications (only if you opted in)</li>
+      <li>To maintain the service, prevent misuse, and improve reliability</li>
+    </ul>
+    <p>We do <strong>not</strong> sell, rent, or share your data with third parties for marketing or advertising purposes.</p>
 
-## 10. Contact
+    <!-- 4 -->
+    <h2>4. Legal Basis for Processing (GDPR Article 6)</h2>
+    <ul>
+      <li><strong>Consent (Art. 6(1)(a))</strong> — by downloading and using the app you consent to the processing described in this policy. You may withdraw consent at any time by deleting the app.</li>
+      <li><strong>Contract (Art. 6(1)(b))</strong> — processing necessary to deliver the service you have subscribed to.</li>
+      <li><strong>Legitimate interests (Art. 6(1)(f))</strong> — basic app functionality, security, and fraud prevention.</li>
+    </ul>
 
-For privacy questions or data deletion requests, contact us at:
-**[YOUR EMAIL HERE]**
+    <!-- 5 -->
+    <h2>5. Tracking and Advertising</h2>
+    <p>AI Girl does <strong>not</strong> track you across other companies' apps or websites. We do not:</p>
+    <ul>
+      <li>Use advertising identifiers (IDFA)</li>
+      <li>Build advertising profiles</li>
+      <li>Share data with data brokers or ad networks</li>
+      <li>Use third-party analytics SDKs that profile behaviour</li>
+    </ul>
 
----
+    <!-- 6 -->
+    <h2>6. Data Shared with Third-Party Services</h2>
+    <p>To operate the app, your data is processed by the following third-party providers. Each acts as a data processor on our behalf and is contractually prohibited from using your data for any purpose other than delivering their service to us.</p>
+    <table>
+      <thead>
+        <tr><th>Service</th><th>Purpose</th><th>Country</th><th>Privacy Policy</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Anthropic (Claude)</td><td>AI chat responses &amp; memory extraction</td><td>USA</td><td><a href="https://www.anthropic.com/privacy" target="_blank">anthropic.com/privacy</a></td></tr>
+        <tr><td>Fal.ai</td><td>AI image generation</td><td>USA</td><td><a href="https://fal.ai/privacy" target="_blank">fal.ai/privacy</a></td></tr>
+        <tr><td>Supabase</td><td>Cloud data storage (characters, messages, tokens)</td><td>EU (Frankfurt)</td><td><a href="https://supabase.com/privacy" target="_blank">supabase.com/privacy</a></td></tr>
+        <tr><td>Apple StoreKit</td><td>Subscription payments</td><td>USA</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></td></tr>
+        <tr><td>Apple Speech Recognition</td><td>Voice-to-text transcription</td><td>USA</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></td></tr>
+        <tr><td>Apple Push Notification Service</td><td>Delivering push notifications (opt-in only)</td><td>USA</td><td><a href="https://www.apple.com/legal/privacy/" target="_blank">apple.com/legal/privacy</a></td></tr>
+      </tbody>
+    </table>
 
-*This privacy policy applies to the AI Girl iOS application.*
+    <!-- 7 -->
+    <h2>7. Consent for AI Data Processing</h2>
+    <p>By using AI Girl you explicitly consent to the following personal data being shared with third-party AI providers in order to deliver core app functionality:</p>
+    <ul>
+      <li><strong>Anthropic (Claude):</strong> your chat messages and character settings are sent to Anthropic's API to generate AI responses. Anthropic is based in the United States.</li>
+      <li><strong>Fal.ai:</strong> your character appearance settings are sent to Fal.ai's API to generate AI images. Fal.ai is based in the United States.</li>
+    </ul>
+    <p>Without this data sharing, the core chat and image features of the app cannot function. You may withdraw this consent at any time by deleting the app, which will also stop all data transmission to these providers. To request deletion of data already processed, contact us at <a href="mailto:post@sswinvest.no">post@sswinvest.no</a>.</p>
+    <p>This disclosure is made in accordance with Apple App Store Review Guideline 5.1.2(i).</p>
+
+    <!-- 8 -->
+    <h2>8. International Data Transfers</h2>
+    <p>Some of our service providers are based in the United States. When your data is processed by these providers it is transferred outside the EU/EEA. We ensure adequate protection through Standard Contractual Clauses (SCCs) as approved by the European Commission.</p>
+
+    <!-- 9 -->
+    <h2>9. Data Storage and Retention</h2>
+    <p>Your character profiles and chat messages are stored on Supabase servers (EU region) and cached locally on your device. Data is associated only with your anonymous device ID — never with your name, email, or Apple ID.</p>
+    <p>We retain your data for as long as you use the app. If you request deletion, we will remove all your data within <strong>30 days</strong> of your request.</p>
+
+    <!-- 10 -->
+    <h2>10. In-App Purchases</h2>
+    <p>Subscription payments are processed entirely by Apple via the App Store. We do not store, see, or have access to your payment information at any time.</p>
+
+    <!-- 11 -->
+    <h2>11. Push Notifications</h2>
+    <p>Push notifications are opt-in only and requested during onboarding. If you grant permission, your device's APNS token is stored in our database solely for the purpose of delivering notifications. You can disable notifications at any time in your iPhone Settings or within the app settings.</p>
+
+    <!-- 12 -->
+    <h2>12. Voice and Microphone</h2>
+    <p>The microphone is used only for the speech-to-text chat feature. Audio is transcribed on-device using Apple's Speech Recognition framework. We never record, transmit, or store raw audio. Microphone access is requested on first use and can be revoked in iPhone Settings at any time.</p>
+
+    <!-- 13 -->
+    <h2>13. Data Security</h2>
+    <p>We implement appropriate technical and organisational measures to protect your data against unauthorised access, loss, or misuse. All data in transit is encrypted using HTTPS/TLS.</p>
+
+    <!-- 14 -->
+    <h2>14. Children's Privacy</h2>
+    <p>AI Girl is not directed at children. We do not knowingly collect personal data from anyone under 18 years of age. If you are a parent or guardian and believe your child has used this app, please contact us immediately at <a href="mailto:post@sswinvest.no">post@sswinvest.no</a> and we will delete all associated data.</p>
+
+    <!-- 15 -->
+    <h2>15. Your Rights (GDPR)</h2>
+    <p>As a user, you have the following rights under the GDPR and the Norwegian Personal Data Act (<em>personopplysningsloven</em>):</p>
+    <ul>
+      <li><strong>Right of access</strong> — request a copy of the data we hold about you</li>
+      <li><strong>Right to rectification</strong> — request correction of inaccurate data</li>
+      <li><strong>Right to erasure</strong> — request deletion of all your data</li>
+      <li><strong>Right to data portability</strong> — receive your data in a portable format</li>
+      <li><strong>Right to object</strong> — object to certain types of processing</li>
+      <li><strong>Right to restrict processing</strong> — request that we limit how we use your data</li>
+      <li><strong>Right to withdraw consent</strong> — at any time by deleting the app or contacting us</li>
+    </ul>
+    <p>You also have the right to lodge a complaint with <strong>Datatilsynet</strong> (the Norwegian Data Protection Authority) at <a href="https://www.datatilsynet.no" target="_blank">datatilsynet.no</a>.</p>
+
+    <!-- 16 -->
+    <h2>16. Changes to This Policy</h2>
+    <p>We may update this Privacy Policy from time to time. We will notify you of significant changes by updating the "Last updated" date at the top of this page. Continued use of the app after changes are posted constitutes your acceptance of the updated policy.</p>
+
+    <!-- 17 -->
+    <h2>17. Contact Us</h2>
+    <p>For privacy questions, data access requests, or deletion requests, please contact us:</p>
+    <p>
+      <strong>SSW AS</strong><br>
+      <a href="mailto:post@sswinvest.no">post@sswinvest.no</a>
+    </p>
+
+    <hr class="divider" />
+  </main>
+
+  <footer>
+    <p>© 2026 SSW AS · AI Girl iOS Application</p>
+    <div>
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="../terms/">Terms of Use</a>
+      <a href="mailto:post@sswinvest.no">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
