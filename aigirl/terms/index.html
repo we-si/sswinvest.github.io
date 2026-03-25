@@ -1,55 +1,293 @@
-# Terms of Use
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Use – AI Girl</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-**Last updated: March 24, 2026**
+    body {
+      font-family: -apple-system, "Söhne", ui-sans-serif, system-ui, sans-serif;
+      background: #faf9f7;
+      color: #1a1a1a;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
 
-## 1. Acceptance of Terms
+    header {
+      background: #fff;
+      border-bottom: 1px solid #e5e2dc;
+      padding: 18px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .logo { font-size: 15px; font-weight: 600; color: #1a1a1a; letter-spacing: -0.01em; }
+    .logo span { color: #d4763b; }
+    nav a {
+      font-size: 14px;
+      color: #666;
+      text-decoration: none;
+      margin-left: 24px;
+      transition: color 0.15s;
+    }
+    nav a:hover { color: #d4763b; }
+    nav a.active { color: #d4763b; font-weight: 500; }
 
-By downloading or using AI Girl, you agree to these Terms of Use. If you do not agree, do not use the app.
+    main {
+      flex: 1;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 64px 24px 96px;
+      width: 100%;
+    }
 
-## 2. Age Restriction
+    .eyebrow {
+      font-size: 13px;
+      font-weight: 600;
+      color: #d4763b;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
 
-**AI Girl is strictly for users aged 18 and over.** The app contains mature and suggestive content. By using the app, you confirm you are at least 18 years old. We reserve the right to terminate access for any user we believe is underage.
+    h1 {
+      font-size: 40px;
+      font-weight: 700;
+      color: #1a1a1a;
+      letter-spacing: -0.03em;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
 
-## 3. Nature of the Service
+    .meta {
+      font-size: 13px;
+      color: #999;
+      margin-bottom: 56px;
+      padding-bottom: 32px;
+      border-bottom: 1px solid #e5e2dc;
+    }
 
-AI Girl provides AI-generated companion characters for entertainment purposes. All characters are entirely fictional. Any resemblance to real persons is coincidental. The AI characters are not real people and do not have feelings, relationships, or existence outside the app.
+    h2 {
+      font-size: 18px;
+      font-weight: 650;
+      color: #1a1a1a;
+      margin: 40px 0 12px;
+      letter-spacing: -0.01em;
+    }
 
-## 4. Acceptable Use
+    p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #444;
+      margin-bottom: 14px;
+    }
 
-You agree **not** to:
-- Use the app if you are under 18 years of age
-- Attempt to extract, copy, or reverse-engineer any part of the app
-- Use the app for any unlawful purpose
-- Attempt to circumvent any content moderation systems
+    ul {
+      padding-left: 0;
+      margin-bottom: 14px;
+      list-style: none;
+    }
+    ul li {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #444;
+      padding-left: 20px;
+      position: relative;
+      margin-bottom: 6px;
+    }
+    ul li::before {
+      content: "–";
+      position: absolute;
+      left: 0;
+      color: #d4763b;
+    }
 
-## 5. Subscriptions & Payments
+    strong { color: #1a1a1a; font-weight: 600; }
 
-- Subscriptions are billed through your Apple ID via the App Store
-- Subscriptions automatically renew unless cancelled at least 24 hours before the renewal date
-- You can manage and cancel subscriptions in your iPhone Settings → Apple ID → Subscriptions
-- We do not offer refunds outside of Apple's standard refund policy
+    .callout {
+      background: #fff8f4;
+      border: 1px solid #f0d5c4;
+      border-left: 4px solid #d4763b;
+      border-radius: 6px;
+      padding: 16px 20px;
+      margin: 20px 0;
+    }
+    .callout p { margin-bottom: 0; color: #5a3a28; font-size: 14px; }
 
-## 6. Intellectual Property
+    a { color: #d4763b; text-decoration: none; }
+    a:hover { text-decoration: underline; }
 
-All content in the app — including AI-generated images, characters, and text — is the property of AI Girl. You may not reproduce, distribute, or use this content outside the app.
+    .divider { border: none; border-top: 1px solid #e5e2dc; margin: 48px 0 0; }
 
-## 7. Disclaimer of Warranties
+    footer {
+      background: #fff;
+      border-top: 1px solid #e5e2dc;
+      padding: 24px 48px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    footer p { font-size: 13px; color: #999; }
+    footer a { font-size: 13px; color: #999; text-decoration: none; margin-left: 20px; }
+    footer a:hover { color: #d4763b; }
 
-The app is provided "as is" without warranties of any kind. We do not guarantee uninterrupted or error-free service. AI-generated content may occasionally be inaccurate or unexpected.
+    @media (max-width: 640px) {
+      header { padding: 16px 20px; }
+      h1 { font-size: 28px; }
+      main { padding: 40px 20px 72px; }
+      footer { padding: 20px; flex-direction: column; align-items: flex-start; }
+      footer a { margin-left: 0; margin-top: 4px; }
+    }
+  </style>
+</head>
+<body>
 
-## 8. Limitation of Liability
+  <header>
+    <div class="logo">SSW AS <span>· AI Girl</span></div>
+    <nav>
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="../terms/" class="active">Terms of Use</a>
+    </nav>
+  </header>
 
-To the maximum extent permitted by law, AI Girl shall not be liable for any indirect, incidental, or consequential damages arising from your use of the app.
+  <main>
+    <div class="eyebrow">Legal</div>
+    <h1>Terms of Use</h1>
+    <p class="meta">Last updated: March 25, 2026 &nbsp;·&nbsp; Effective: March 25, 2026</p>
 
-## 9. Changes to Terms
+    <p>These Terms of Use ("Terms") govern your use of the AI Girl iOS application operated by <strong>SSW AS</strong> ("we", "us", or "our"). By downloading or using the app you agree to be bound by these Terms and our Privacy Policy. If you do not agree, do not use the app.</p>
 
-We may update these terms at any time. Continued use of the app after changes constitutes acceptance of the new terms.
+    <div class="callout">
+      <p><strong>Age restriction:</strong> AI Girl is strictly for users aged <strong>18 years or older</strong>. The app contains mature and suggestive content. By using the app you confirm you are at least 18 years old. We reserve the right to terminate access for any user we believe to be underage, without refund.</p>
+    </div>
 
-## 10. Contact
+    <!-- 1 -->
+    <h2>1. Nature of the Service</h2>
+    <p>AI Girl provides AI-generated companion characters for <strong>entertainment purposes only</strong>. All characters are entirely fictional and computer-generated. Any resemblance to real persons, living or dead, is purely coincidental. The AI characters are not real people — they do not have feelings, consciousness, genuine relationships, or any existence outside the app. The app is not a substitute for real human relationships or professional mental health support.</p>
 
-Questions about these terms? Contact us at:
-**[YOUR EMAIL HERE]**
+    <!-- 2 -->
+    <h2>2. Licence</h2>
+    <p>SSW AS grants you a limited, non-exclusive, non-transferable, revocable licence to use the app on any Apple-branded device that you own or control, for your personal, non-commercial purposes, subject to these Terms. Where Family Sharing is enabled, the licence may be shared with your family group in accordance with Apple's Family Sharing rules. You may not sublicense, sell, resell, transfer, assign, or otherwise commercially exploit the app or its content.</p>
+    <p>This licence is between you and SSW AS only. <strong>Apple is not a party to this agreement</strong> and bears no responsibility for the app or its content. However, Apple and its subsidiaries are third-party beneficiaries of these Terms, and Apple has the right to enforce these Terms against you as a third-party beneficiary.</p>
 
----
+    <!-- 3 -->
+    <h2>3. Eligibility</h2>
+    <p>By using the app you confirm that:</p>
+    <ul>
+      <li>You are at least 18 years of age</li>
+      <li>You are not located in a country subject to a U.S. Government embargo or designated as a "terrorist supporting" country</li>
+      <li>You are not listed on any U.S. Government list of prohibited or restricted parties</li>
+    </ul>
 
-*These terms apply to the AI Girl iOS application.*
+    <!-- 4 -->
+    <h2>4. Acceptable Use</h2>
+    <p>You agree <strong>not</strong> to:</p>
+    <ul>
+      <li>Use the app if you are under 18 years of age</li>
+      <li>Attempt to extract, scrape, copy, or reverse-engineer any part of the app</li>
+      <li>Use the app for any unlawful, harmful, or fraudulent purpose</li>
+      <li>Attempt to circumvent any content moderation or safety systems</li>
+      <li>Use automated tools, bots, or scripts to interact with the app</li>
+      <li>Attempt to gain unauthorised access to any part of the service or its infrastructure</li>
+      <li>Use the app in any way that could harm or exploit any person</li>
+    </ul>
+
+    <!-- 5 -->
+    <h2>5. Subscriptions and Payments</h2>
+    <p>AI Girl offers a weekly auto-renewing subscription ("Premium") that unlocks unlimited messages, unlimited photo generation, up to 4 characters, and additional notification features. The following terms apply:</p>
+    <ul>
+      <li><strong>Payment:</strong> charged to your Apple ID account at confirmation of purchase</li>
+      <li><strong>Auto-renewal:</strong> subscriptions renew automatically unless cancelled at least 24 hours before the end of the current billing period</li>
+      <li><strong>Renewal charge:</strong> your account is charged for renewal within 24 hours prior to the end of the current period</li>
+      <li><strong>Cancellation:</strong> manage and cancel your subscription at any time in iPhone Settings → Apple ID → Subscriptions</li>
+      <li><strong>Access after cancellation:</strong> you retain full Premium access until the end of the paid billing period</li>
+      <li><strong>Free trial:</strong> if a free trial is offered, any unused portion is forfeited upon purchase of a subscription</li>
+      <li><strong>Refunds:</strong> we do not offer refunds outside of Apple's standard refund policy — to request a refund visit <a href="https://reportaproblem.apple.com" target="_blank">reportaproblem.apple.com</a></li>
+      <li>Subscription prices are displayed in the app and are set in the App Store; prices may vary by region</li>
+    </ul>
+
+    <!-- 6 -->
+    <h2>6. Free Tier Limits</h2>
+    <p>Free users are subject to daily usage limits, including a maximum number of chat messages and AI-generated photos per day. These limits reset at midnight. When a limit is reached, the app will prompt you to upgrade to Premium. We reserve the right to adjust free tier limits at any time.</p>
+
+    <!-- 7 -->
+    <h2>7. AI-Generated Content</h2>
+    <p>The app uses third-party AI services (Anthropic and Fal.ai) to generate text and images. AI-generated content may occasionally be inaccurate, unexpected, or inconsistent. We do not guarantee that AI responses or images will always meet your expectations. Use your own judgement when interacting with AI-generated content.</p>
+    <p>All AI-generated images are produced based on character settings you defined during onboarding. Images are generated in response to in-chat events and are intended for personal entertainment only. You may not reproduce, distribute, or share AI-generated images from the app without our prior written consent.</p>
+
+    <!-- 8 -->
+    <h2>8. Maintenance and Support</h2>
+    <p>SSW AS is solely responsible for providing maintenance and support services for the app. Apple has no obligation whatsoever to provide any maintenance or support services with respect to the app. Any questions or complaints regarding the app should be directed to us at <a href="mailto:post@sswinvest.no">post@sswinvest.no</a>.</p>
+
+    <!-- 9 -->
+    <h2>9. Intellectual Property</h2>
+    <p>All content in the app — including AI-generated images, characters, text, design, code, and trademarks — is the property of SSW AS or its licensors and is protected by Norwegian and international intellectual property law. You may not reproduce, distribute, modify, or use any such content outside the app without our prior written consent.</p>
+
+    <!-- 10 -->
+    <h2>10. User-Provided Content</h2>
+    <p>Character preferences, settings, and messages you provide remain your own. By using the app you grant SSW AS a limited licence to process this content solely to deliver the service to you. We do not claim ownership of your inputs.</p>
+
+    <!-- 11 -->
+    <h2>11. Push Notifications</h2>
+    <p>If you grant notification permission during onboarding, the app will send you scheduled messages from your AI companion throughout the day. You can disable notifications at any time in iPhone Settings or in the app settings. Granting notification permission is optional and not required to use the app.</p>
+
+    <!-- 12 -->
+    <h2>12. Privacy</h2>
+    <p>Your use of the app is also governed by our <a href="../privacy/">Privacy Policy</a>, which is incorporated into these Terms by reference. Please review it carefully.</p>
+
+    <!-- 13 -->
+    <h2>13. Disclaimer of Warranties</h2>
+    <p>The app is provided "as is" and "as available" without warranties of any kind, express or implied, including but not limited to warranties of merchantability, fitness for a particular purpose, or non-infringement. We do not warrant that the app will be uninterrupted, error-free, or free of harmful components.</p>
+
+    <!-- 14 -->
+    <h2>14. Limitation of Liability</h2>
+    <p>To the maximum extent permitted by applicable law, SSW AS and its directors, employees, and partners shall not be liable for any indirect, incidental, special, consequential, or punitive damages arising from your use of or inability to use the app, even if we have been advised of the possibility of such damages. Our total liability to you shall not exceed the amount you paid us in the 12 months preceding the claim.</p>
+
+    <!-- 15 -->
+    <h2>15. Service Availability</h2>
+    <p>We reserve the right to modify, suspend, or discontinue the app or any part of it at any time, with or without notice. We are not liable to you or any third party for any modification, suspension, or discontinuation of the service.</p>
+
+    <!-- 16 -->
+    <h2>16. Termination</h2>
+    <p>We may suspend or terminate your access to the app immediately, without prior notice, if you breach these Terms or if we are required to do so by law. Upon termination your right to use the app ceases immediately. Paid subscription periods are non-refundable upon termination for breach.</p>
+
+    <!-- 17 -->
+    <h2>17. Third-Party Services</h2>
+    <p>The app relies on third-party services including Anthropic, Fal.ai, Supabase, and Apple. These services are governed by their own terms and privacy policies. SSW AS is not responsible for the availability, accuracy, or content of third-party services.</p>
+
+    <!-- 18 -->
+    <h2>18. Governing Law and Disputes</h2>
+    <p>These Terms are governed by the laws of Norway. Any disputes shall be subject to the exclusive jurisdiction of Norwegian courts, unless mandatory consumer protection laws in your country of residence provide otherwise.</p>
+    <p>If you are a consumer in the EU/EEA, you also have the right to use the EU Online Dispute Resolution platform at <a href="https://ec.europa.eu/consumers/odr" target="_blank">ec.europa.eu/consumers/odr</a>.</p>
+
+    <!-- 19 -->
+    <h2>19. Changes to These Terms</h2>
+    <p>We may update these Terms at any time. We will notify you of material changes by updating the "Last updated" date. Continued use of the app after changes are posted constitutes your acceptance of the updated Terms. If you do not agree with the updated Terms, you must stop using the app.</p>
+
+    <!-- 20 -->
+    <h2>20. Contact Us</h2>
+    <p>Questions about these Terms? Contact us at:</p>
+    <p>
+      <strong>SSW AS</strong><br>
+      <a href="mailto:post@sswinvest.no">post@sswinvest.no</a>
+    </p>
+
+    <hr class="divider" />
+  </main>
+
+  <footer>
+    <p>© 2026 SSW AS · AI Girl iOS Application</p>
+    <div>
+      <a href="../privacy/">Privacy Policy</a>
+      <a href="../terms/">Terms of Use</a>
+      <a href="mailto:post@sswinvest.no">Contact</a>
+    </div>
+  </footer>
+
+</body>
+</html>
